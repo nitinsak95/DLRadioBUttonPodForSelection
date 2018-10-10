@@ -12,9 +12,11 @@
 		A41CFF41209ADAB100D479E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CFF3F209ADAB100D479E8 /* Main.storyboard */; };
 		A41CFF43209ADAB100D479E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41CFF42209ADAB100D479E8 /* Assets.xcassets */; };
 		A41CFF46209ADAB100D479E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CFF44209ADAB100D479E8 /* LaunchScreen.storyboard */; };
+		AA0B0459A3162670638516F1 /* Pods_RadioBt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CE023EB28224EF78237D94 /* Pods_RadioBt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B51AB03F90BC34C528A5FB7 /* Pods-RadioBt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioBt.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioBt/Pods-RadioBt.release.xcconfig"; sourceTree = "<group>"; };
 		A41CFF38209ADAB100D479E8 /* RadioBt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioBt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41CFF3B209ADAB100D479E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A41CFF3D209ADAB100D479E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A41CFF42209ADAB100D479E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41CFF45209ADAB100D479E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A41CFF47209ADAB100D479E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6CE023EB28224EF78237D94 /* Pods_RadioBt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioBt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AF3F52B07546D9006F73BF /* Pods-RadioBt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioBt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioBt/Pods-RadioBt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0B0459A3162670638516F1 /* Pods_RadioBt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32C5A3BE776DCE62BCE716CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6AF3F52B07546D9006F73BF /* Pods-RadioBt.debug.xcconfig */,
+				0B51AB03F90BC34C528A5FB7 /* Pods-RadioBt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A743118935D5489AC736E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6CE023EB28224EF78237D94 /* Pods_RadioBt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A41CFF2F209ADAB100D479E8 = {
 			isa = PBXGroup;
 			children = (
 				A41CFF3A209ADAB100D479E8 /* RadioBt */,
 				A41CFF39209ADAB100D479E8 /* Products */,
+				32C5A3BE776DCE62BCE716CE /* Pods */,
+				3A743118935D5489AC736E9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A41CFF4A209ADAB100D479E8 /* Build configuration list for PBXNativeTarget "RadioBt" */;
 			buildPhases = (
+				681A91AB890CD7A7BD2EF443 /* [CP] Check Pods Manifest.lock */,
 				A41CFF34209ADAB100D479E8 /* Sources */,
 				A41CFF35209ADAB100D479E8 /* Frameworks */,
 				A41CFF36209ADAB100D479E8 /* Resources */,
+				9DD6B9560775ED0CE31AD7FE /* [CP] Embed Pods Frameworks */,
+				581F8FD043F8377CC196A8E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		581F8FD043F8377CC196A8E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioBt/Pods-RadioBt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681A91AB890CD7A7BD2EF443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioBt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD6B9560775ED0CE31AD7FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RadioBt/Pods-RadioBt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioBt/Pods-RadioBt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A41CFF34209ADAB100D479E8 /* Sources */ = {
@@ -272,9 +353,11 @@
 		};
 		A41CFF4B209ADAB100D479E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AF3F52B07546D9006F73BF /* Pods-RadioBt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHKB8C6MSB;
 				INFOPLIST_FILE = RadioBt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = affixus.RadioBt;
@@ -286,9 +369,11 @@
 		};
 		A41CFF4C209ADAB100D479E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B51AB03F90BC34C528A5FB7 /* Pods-RadioBt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHKB8C6MSB;
 				INFOPLIST_FILE = RadioBt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = affixus.RadioBt;
